@@ -51,9 +51,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 🚀 Space Traveler Hub <a name="about-project"></a>
+# 🚀 Random Users <a name="about-project"></a>
 
-**React-Redux Toolkit** app for generating random user information combines the power of React, Redux, and the Redux Toolkit to provide an efficient and user-friendly experience for generating and interacting with randomized user details..
+**Random Users** React-Redux Toolkit app for generating random user information combines the power of React, Redux, and the Redux Toolkit to provide an efficient and user-friendly experience for generating and interacting with randomized user details..
 
 ![Screenshot (18)]()
 
