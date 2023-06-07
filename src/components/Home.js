@@ -1,26 +1,27 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getUsers } from '../redux/users/usersSlice';
-import User from './User';
+import { getCities } from '../redux/cities/citiesSlice';
+import Navigation from './Navigation';
+import Header from './Header';
+import City from './City';
 
 function Home() {
   const dispatch = useDispatch();
-  const users = useSelector((state) => state.users.users);
+  const cities = useSelector((state) => state.cities.cities);
 
   useEffect(() => {
-    if (users.length === 0) dispatch(getUsers());
-  }, [dispatch, users.length]);
+    if (cities.length === 0) {
+      dispatch(getCities());
+    }
+  }, [dispatch, cities.length]);
 
   return (
-    <div className="users-con">
-      {users
-        && users.map((user) => (
-          <User
-            key={user.id}
-            avatar={user.avatar}
-            user_name={user.first_name}
-          />
-        ))}
+    <div className="cities-con">
+      <Navigation />
+      <Header />
+      {cities && cities.map((city) => (
+        <City key={city.city_name} city={city} />
+      ))}
     </div>
   );
 }
