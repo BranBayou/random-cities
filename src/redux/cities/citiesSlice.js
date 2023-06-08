@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const baseUrl = 'https://api.api-ninjas.com/v1/city?name=all&limit=30';
+const baseUrl = 'https://api.api-ninjas.com/v1/city?name=all&limit=28';
 const config = {
   headers: {
     'X-Api-Key': 'nXJn87kLhgCGxAj8hDZPYw==e2qMnfkkPacAT9an',
@@ -21,25 +21,31 @@ export const getCities = createAsyncThunk('cities/getCities', async (_, thunkAPI
 const initialState = {
   cities: [],
   loading: false,
+  selectedCity: '',
+  searchedCity: '',
   error: '',
 };
 
 const citiesSlice = createSlice({
   name: 'cities',
   initialState,
-  reducers: {},
+  reducers: {
+    selectCity: (state, action) => ({ ...state, selectedCity: action.payload }),
+    searchCity: (state, action) => ({ ...state, searchedCity: action.payload }),
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getCities.fulfilled, (state, action) => {
-        const citiesList = Array.isArray(action.payload) // Check if payload is an array
+        const citiesList = Array.isArray(action.payload)
           ? action.payload.map((city) => ({
             city_name: city.name,
             city_latitude: city.latitude,
             city_longitude: city.longitude,
             city_country: city.country,
             city_is_capital: city.is_capital,
+            city_population: city.population,
           }))
-          : []; // If payload is not an array, assign an empty array
+          : [];
 
         return {
           ...state,
@@ -60,4 +66,5 @@ const citiesSlice = createSlice({
   },
 });
 
+export const { searchCity, selectCity } = citiesSlice.actions;
 export default citiesSlice.reducer;

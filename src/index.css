@@ -1,5 +1,10 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -16,6 +21,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   max-width: 920px;
   margin: 0 auto;
+  background-color: #3d5a80;
+  color: #fff;
 }
 
 code {
@@ -28,11 +35,40 @@ code {
     monospace;
 }
 
-/*--- Home ---*/
+/* -- Navigation -- */
+
+.logo-ty {
+  color: #fb8500;
+}
+
+.search {
+  height: 1.7rem;
+  border-radius: 0.8rem;
+  border: none;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.search-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+/* --- Home --- */
 
 .cities-con {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
 }
 
 .nav-bar {
@@ -41,8 +77,62 @@ code {
   height: 10vh;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 0.3rem solid lightgray;
 }
 
 .header-con {
   grid-column: 1/5;
+  text-align: center;
+  padding: 2rem;
+}
+
+.arrow-detail {
+  color: #fff;
+}
+
+/* Cities */
+
+.city-details {
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  margin: 1px;
+  text-align: right;
+}
+
+.city-details:hover {
+  background-color: #293241;
+  cursor: pointer;
+}
+
+.city-info {
+  padding-top: 1.5rem;
+}
+
+.population {
+  font-size: 0.75rem;
+}
+
+/* --- Datail page --- */
+
+.detail-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+  padding: 0 1rem;
+  border-radius: 5px;
+}
+
+.back-arrow {
+  color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.city-info-detail {
+  border: none;
+}
+
+.detail-div:nth-child(odd) {
+  background-color: #293241;
 }
