@@ -7,6 +7,7 @@ function Home() {
   const dispatch = useDispatch();
   const cities = useSelector((state) => state.cities.cities);
   const loading = useSelector((state) => state.cities.loading);
+  const error = useSelector((state) => state.cities.error);
   const searchedCity = useSelector((state) => state.cities.searchedCity);
 
   useEffect(() => {
@@ -17,6 +18,10 @@ function Home() {
 
   if (loading) {
     return <h3>Loading...</h3>;
+  }
+
+  if (error) {
+    return <h3>Something went wrong ...</h3>;
   }
 
   // eslint-disable-next-line max-len

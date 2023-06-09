@@ -37,6 +37,10 @@ code {
 
 /* -- Navigation -- */
 
+.nav-bar {
+  padding: 0 1rem;
+}
+
 .logo-ty {
   color: #fb8500;
 }
