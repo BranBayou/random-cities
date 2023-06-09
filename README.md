@@ -55,15 +55,15 @@ After you're finished please remove all the comments and instructions!
 
 **Random Cities** React-Redux Toolkit app for generating random city information combines the power of React, Redux, and the Redux Toolkit to provide an efficient and user-friendly experience for generating and interacting with randomized user details..
 
-![Screenshot (18)]()
+![Screenshot (1)](https://github.com/BranBayou/random-cities/blob/components-and-api/assets/world-cities-random.onrender.com_.png?raw=true)
 
-![Screenshot (17)]()
+![Screenshot (2)](https://github.com/BranBayou/random-cities/blob/components-and-api/assets/world-cities-random.onrender.com_%20(1).png?raw=true)
 
-![Screenshot (22)]()
+![Screenshot (3)](https://github.com/BranBayou/random-cities/blob/components-and-api/assets/world-cities-random.onrender.com_%20(2).png?raw=true)
 
-![Screenshot (23)]()
+![Screenshot (4)](https://github.com/BranBayou/random-cities/blob/components-and-api/assets/world-cities-random.onrender.com_%20(4).png?raw=true)
 
-![Screenshot (19)]()
+![Screenshot (5)](https://github.com/BranBayou/random-cities/blob/components-and-api/assets/world-cities-random.onrender.com_%20(3).png?raw=true)
 
 ## 🛠 Built With <a name="built-with"></a>
 
