@@ -1,4 +1,4 @@
-# Random Users (React Capstone Project)
+# Random Cities (React Capstone Project)
 
 <!--
 HOW TO USE:
@@ -51,9 +51,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 🚀 Random Users <a name="about-project"></a>
+# 🚀 Random Cities <a name="about-project"></a>
 
-**Random Users** React-Redux Toolkit app for generating random user information combines the power of React, Redux, and the Redux Toolkit to provide an efficient and user-friendly experience for generating and interacting with randomized user details..
+**Random Cities** React-Redux Toolkit app for generating random city information combines the power of React, Redux, and the Redux Toolkit to provide an efficient and user-friendly experience for generating and interacting with randomized user details..
 
 ![Screenshot (18)]()
 
@@ -93,7 +93,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- LIVE DEMO -->
 ### 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link]()
+- [Live Demo Link](https://world-cities-random.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
