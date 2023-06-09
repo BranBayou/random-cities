@@ -41,6 +41,18 @@ code {
   color: #fb8500;
 }
 
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-icon {
+  color: #fff;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
 .search {
   height: 1.7rem;
   border-radius: 0.8rem;
@@ -93,10 +105,14 @@ code {
 /* Cities */
 
 .city-details {
-  border: 1px solid lightgray;
   padding: 0.5rem;
   margin: 1px;
   text-align: right;
+}
+
+.city-details:nth-child(4n+2),
+.city-details:nth-child(4n+3) {
+  background-color: #293241;
 }
 
 .city-details:hover {
@@ -135,4 +151,20 @@ code {
 
 .detail-div:nth-child(odd) {
   background-color: #293241;
+}
+
+@media screen and (min-width: 570px) {
+  .city-details:nth-child(odd) {
+    background-color: #3d5a80;
+  }
+
+  .city-details:nth-child(even) {
+    background-color: #293241;
+  }
+}
+
+@media screen and (min-width: 755px) {
+  .city-details:nth-child(odd) {
+    background-color: #293241;
+  }
 }

@@ -6,6 +6,7 @@ import City from './City';
 function Home() {
   const dispatch = useDispatch();
   const cities = useSelector((state) => state.cities.cities);
+  const loading = useSelector((state) => state.cities.loading);
   const searchedCity = useSelector((state) => state.cities.searchedCity);
 
   useEffect(() => {
@@ -14,8 +15,18 @@ function Home() {
     }
   }, [dispatch, cities.length]);
 
+  if (loading) {
+    return <h3>Loading...</h3>;
+  }
+
   // eslint-disable-next-line max-len
-  const filteredCities = cities.filter((city) => city.city_name.toLowerCase().includes(searchedCity.toLowerCase()));
+  const filteredCities = searchedCity
+    ? cities.filter((city) => {
+      const cityName = city.city_name.toLowerCase();
+      const searchValue = searchedCity.toLowerCase();
+      return cityName.includes(searchValue);
+    })
+    : cities;
 
   return (
     <div className="cities-con">

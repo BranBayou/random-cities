@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 
-const baseUrl = 'https://api.api-ninjas.com/v1/city?name=all&limit=28';
+const baseUrl = 'https://api.api-ninjas.com/v1/city?name=all&limit=30';
 const config = {
   headers: {
     'X-Api-Key': 'nXJn87kLhgCGxAj8hDZPYw==e2qMnfkkPacAT9an',
@@ -11,10 +10,19 @@ const config = {
 
 export const getCities = createAsyncThunk('cities/getCities', async (_, thunkAPI) => {
   try {
-    const response = await axios.get(baseUrl, config);
-    return response.data;
+    const response = await fetch(baseUrl, {
+      method: 'GET',
+      headers: config.headers,
+    });
+
+    if (!response.ok) {
+      throw new Error('Error connecting to the API');
+    }
+
+    const data = await response.json();
+    return data;
   } catch (error) {
-    return thunkAPI.rejectWithValue({ error: 'Error connecting to the API' });
+    return thunkAPI.rejectWithValue({ error: error.message });
   }
 });
 
