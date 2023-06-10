@@ -80,8 +80,8 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- [x] Create a users info
-- [x] Call API to give certain info on users
+- [x] Create a city info
+- [x] Call API to give certain info on city
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
