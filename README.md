@@ -1,4 +1,4 @@
-# Random Users (React Capstone Project)
+# Random Cities (React Capstone Project)
 
 <!--
 HOW TO USE:
@@ -51,9 +51,13 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 🚀 Space Traveler Hub <a name="about-project"></a>
+# 🚀 Random Cities <a name="about-project"></a>
 
-**React-Redux Toolkit** app for generating random user information combines the power of React, Redux, and the Redux Toolkit to provide an efficient and user-friendly experience for generating and interacting with randomized user details..
+**Random Cities** React-Redux Toolkit app for generating random city information combines the power of React, Redux, and the Redux Toolkit to provide an efficient and user-friendly experience for generating and interacting with randomized user details..
+
+![Screenshot (1)](https://github.com/BranBayou/random-cities/blob/components-and-api/assets/world-cities-random.onrender.com_.png)
+
+![Screenshot (5)](https://github.com/BranBayou/random-cities/blob/components-and-api/assets/world-cities-random.onrender.com_%20(3).png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -76,14 +80,15 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- [x] Create a users info
-- [x] Call API to give certain info on users
+- [x] Create a city info
+- [x] Call API to give certain info on city
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 ### 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link]()
+- [Live Demo Link](https://world-cities-random.onrender.com/)
+- [Live Video Link](https://loom.com/share/64290ece2f074826b392666d3517e8d6)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,7 +115,7 @@ Clone this repository to your desired folder, write the following commands in gi
 
 ```sh
   cd my-folder
-  git https://github.com/BranBayou/random-users.git
+  git https://github.com/BranBayou/random-cities.git
 ```
 
 
@@ -168,7 +173,7 @@ Click [this link](https://www.loom.com/share/a600c92ff4cd4594a16d8c8d59bc619d) t
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/BranBayou/random-users/issues).
+Feel free to check the [issues page](https://github.com/BranBayou/random-cities/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -200,7 +205,7 @@ I also would like to thank Nelson Sakwa for the provided design to make this pro
 
 - **How do I clone your report for use?**
 
-  - Open git bash and enter "clone git@github.com:BranBayou/random-users.git"
+  - Open git bash and enter "clone git@github.com:BranBayou/random-cities.git"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
