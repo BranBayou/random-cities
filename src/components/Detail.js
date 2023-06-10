@@ -14,7 +14,7 @@ export default function Detail({ city }) {
           <h5>City details</h5>
         </div>
         <div className="search-bar">
-          <BsMicFill />
+          <BsMicFill className="mic-icon" />
           <IoMdSettings />
         </div>
       </div>
