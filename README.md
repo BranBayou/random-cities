@@ -57,12 +57,6 @@ After you're finished please remove all the comments and instructions!
 
 ![Screenshot (1)](https://github.com/BranBayou/random-cities/blob/components-and-api/assets/world-cities-random.onrender.com_.png)
 
-![Screenshot (2)](https://github.com/BranBayou/random-cities/blob/components-and-api/assets/world-cities-random.onrender.com_%20(1).png)
-
-![Screenshot (3)](https://github.com/BranBayou/random-cities/blob/components-and-api/assets/world-cities-random.onrender.com_%20(2).png)
-
-![Screenshot (4)](https://github.com/BranBayou/random-cities/blob/components-and-api/assets/world-cities-random.onrender.com_%20(4).png)
-
 ![Screenshot (5)](https://github.com/BranBayou/random-cities/blob/components-and-api/assets/world-cities-random.onrender.com_%20(3).png)
 
 ## 🛠 Built With <a name="built-with"></a>
