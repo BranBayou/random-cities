@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getCities } from '../redux/cities/citiesSlice';
+import { CiSearch } from 'react-icons/ci';
+import { BsArrowLeftCircle, BsMicFill } from 'react-icons/bs';
+import { IoMdSettings } from 'react-icons/io';
+import { NavLink } from 'react-router-dom';
+import { getCities, searchCity } from '../redux/cities/citiesSlice';
 import City from './City';
 
 function Home() {
@@ -34,10 +38,32 @@ function Home() {
     : cities;
 
   return (
-    <div className="cities-con">
-      {filteredCities.map((city) => (
-        <City key={city.city_name} city={city} />
-      ))}
+    <div>
+      <div className="nav-bar">
+        <div className="left">
+          <NavLink className="navlink-arrow" to="/"><BsArrowLeftCircle className="back-arrow" /></NavLink>
+          <p>2022</p>
+        </div>
+        <div>
+          <h5>All cities</h5>
+        </div>
+        <div>
+          <BsMicFill className="mic-icon" />
+          <IoMdSettings />
+        </div>
+      </div>
+      <div className="header-con">
+        <h2>Cities around the world.</h2>
+        <div className="search-bar">
+          <input className="search" onChange={(event) => dispatch(searchCity(event.target.value))} type="search" placeholder="Search city" />
+          <CiSearch className="search-icon" />
+        </div>
+      </div>
+      <div className="cities-con">
+        {filteredCities.map((city) => (
+          <City key={city.city_name} city={city} />
+        ))}
+      </div>
     </div>
   );
 }

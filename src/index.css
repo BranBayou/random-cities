@@ -94,13 +94,29 @@ code {
 }
 
 .header-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 20vh;
   grid-column: 1/5;
   text-align: center;
   padding: 2rem;
+  background-image: url("../public/map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-con h2 {
+  color: #1f51ff;
 }
 
 .arrow-detail {
   color: #fff;
+}
+
+.mic-icon {
+  margin: 0 0.5rem;
 }
 
 /* Cities */
