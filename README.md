@@ -55,16 +55,6 @@ After you're finished please remove all the comments and instructions!
 
 **React-Redux Toolkit** app for generating random user information combines the power of React, Redux, and the Redux Toolkit to provide an efficient and user-friendly experience for generating and interacting with randomized user details..
 
-![Screenshot (18)]()
-
-![Screenshot (17)]()
-
-![Screenshot (22)]()
-
-![Screenshot (23)]()
-
-![Screenshot (19)]()
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
