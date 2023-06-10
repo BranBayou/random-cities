@@ -114,7 +114,7 @@ Clone this repository to your desired folder, write the following commands in gi
 
 ```sh
   cd my-folder
-  git https://github.com/BranBayou/random-users.git
+  git https://github.com/BranBayou/random-cities.git
 ```
 
 
@@ -172,7 +172,7 @@ Click [this link](https://www.loom.com/share/a600c92ff4cd4594a16d8c8d59bc619d) t
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/BranBayou/random-users/issues).
+Feel free to check the [issues page](https://github.com/BranBayou/random-cities/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -204,7 +204,7 @@ I also would like to thank Nelson Sakwa for the provided design to make this pro
 
 - **How do I clone your report for use?**
 
-  - Open git bash and enter "clone git@github.com:BranBayou/random-users.git"
+  - Open git bash and enter "clone git@github.com:BranBayou/random-cities.git"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
