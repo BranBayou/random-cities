@@ -37,10 +37,6 @@ code {
 
 /* -- Navigation -- */
 
-.nav-bar {
-  padding: 0 1rem;
-}
-
 .logo-ty {
   color: #fb8500;
 }
@@ -94,6 +90,7 @@ code {
   align-items: center;
   justify-content: space-between;
   border-bottom: 0.3rem solid lightgray;
+  padding: 0 1rem;
 }
 
 .header-con {
