@@ -88,6 +88,7 @@ After you're finished please remove all the comments and instructions!
 <!-- LIVE DEMO -->
 ### 🚀 Live Demo <a name="live-demo"></a>
 - [Live Demo Link](https://world-cities-random.onrender.com/)
+- [Live Video Link](https://loom.com/share/64290ece2f074826b392666d3517e8d6)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
